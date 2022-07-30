@@ -3,6 +3,8 @@ import { Navbar } from './navbar'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 
+import Footer from './Footer/Footer'
+
 export const LoginScreen = () => {
   const [email, setEmail] = useState('')
   const [pass, setPassword] = useState('')
@@ -75,6 +77,7 @@ export const LoginScreen = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

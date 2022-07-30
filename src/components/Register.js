@@ -1,6 +1,8 @@
 import React from 'react'
 import { Navbar } from './navbar'
 
+import Footer from './Footer/Footer'
+
 export const Register = () => {
   return (
     <>
@@ -59,6 +61,7 @@ export const Register = () => {
           </div>
         </form>
       </section>
+      <Footer />
     </>
   )
 }

@@ -26,6 +26,7 @@ export const DashBoard = () => {
             </div>
           </div>
         </div>
+        <div className='horizontal'></div>
         <div className='centered-data'>
           <div className='change-info'>
             <div className='btn-chg'>

@@ -10,12 +10,12 @@ export const Navbar = () => {
     },
     {
       title: 'About Us',
-      url: '/About',
+      url: '/aboutus',
       clsName: 'nav-links',
     },
     {
       title: 'Blog',
-      url: '/Blog',
+      url: '/blog',
       clsName: 'nav-links',
     },
   ]

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Navbar } from './navbar'
 
+import Footer from './Footer/Footer'
+
 export const ForgotPassword = () => {
   return (
     <>
@@ -21,6 +23,7 @@ export const ForgotPassword = () => {
           </div>
         </form>
       </section>
+      <Footer />
     </>
   )
 }
