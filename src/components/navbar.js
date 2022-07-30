@@ -1,24 +1,82 @@
 import React from 'react'
+import './navbar.css'
 
 export const Navbar = () => {
+  let navobjLeft = [
+    {
+      title: 'Home',
+      url: '/',
+      clsName: 'nav-links',
+    },
+    {
+      title: 'About Us',
+      url: '/About',
+      clsName: 'nav-links',
+    },
+    {
+      title: 'Blog',
+      url: '/Blog',
+      clsName: 'nav-links',
+    },
+  ]
+
+  let navobjRight = [
+    {
+      title: 'Sign Up',
+      url: '/register',
+      clsName: 'nav-links',
+    },
+    {
+      title: 'Log In',
+      url: '/loginscreen',
+      clsName: 'nav-links',
+    },
+  ]
   return (
-    <>
-    <nav>
-        <div class="nav-left">
-            <ul >
-                <li class="item"><a href="homepage.html">Home</a></li>
-                <li class="item"><a href="aboutus.html">About-Us</a></li>
-                <li class="item"><a href="blog.html">Blog</a></li>
-            </ul>
-        </div>
-        <a class="logo">DIAZSIFONTES</a>
-        <div class="nav-right">
-            <ul class="user-login" style="display: flex;list-style-type: none;">
-                <li><a href="loggedin.html">Member</a></li>
-                <li><a href="admin.html">Admin</a></li>
-            </ul>
-        </div>
+    <nav className='navbarItems'>
+      <ul className='navLinksLeft'>
+        {navobjLeft?.map((item, index) => {
+          return (
+            <li key={index}>
+              <a className={item.clsName} href={item.url}>
+                {item.title}
+              </a>
+            </li>
+          )
+        })}
+      </ul>
+      <div className='DIAZSIFONTES'>DIAZSIFONTES</div>
+      <ul className='navLinksRight'>
+        {navobjRight?.map((item, index) => {
+          return (
+            <li key={index}>
+              <a className={item.clsName} href={item.url}>
+                {item.title}
+              </a>
+            </li>
+          )
+        })}
+      </ul>
+      {/* <ul className='navLinks'>
+        {navobjLeft?.map((item, index) => {
+          if (item.title === 'DIAZSIFONTES') {
+            // eslint-disable-next-line no-unused-vars
+            return (
+              <li key={index}>
+                <div className='DIAZSIFONTES'>DIAZSIFONTES</div>
+              </li>
+            )
+          } else {
+            return (
+              <li key={index}>
+                <a className={item.clsName} href={item.url}>
+                  {item.title}
+                </a>
+              </li>
+            )
+          }
+        })}
+      </ul> */}
     </nav>
-    </>
   )
 }

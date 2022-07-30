@@ -1,0 +1,122 @@
+.centered-data {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.centered-data .change-info {
+  display: flex;
+  padding: 0.5em;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+.centered-data .change-info button.chgpwd-btn {
+  padding: 0.4em;
+  background-color: black;
+  color: #fff;
+}
+.centered-data .change-info button.chgpwd-btn a {
+  color: white;
+}
+.centered-data a {
+  color: black;
+}
+.centered-data h6 {
+  font-size: 22px;
+  padding: 0.3em;
+}
+.centered-data .td {
+  border: solid;
+}
+.centered-data .table {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #d0d0d0;
+  flex: 1 1 auto;
+}
+.centered-data button.addt-btn,
+button.editt-btn,
+button.delt-btn {
+  padding: 0.5em;
+  border-style: ridge;
+  color: black;
+}
+.centered-data .table-btn {
+  padding: 0.5em;
+}
+.centered-data .btn-row {
+  display: flex;
+  flex-direction: row;
+}
+.th {
+  display: none;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.th > .td {
+  white-space: normal;
+  justify-content: center;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
+.tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.banner_icon {
+  width: 100%;
+  height: 360px;
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannercontent {
+  width: 250px;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  margin-top: 50px;
+  background-color: #cdcdcd70;
+  border-radius: 5px;
+}
+.bannerImg {
+  z-index: -10;
+  width: 100%;
+  margin-top: -210px;
+}
