@@ -49,6 +49,14 @@
 .user-details .prof-details .change-info button.chgpwd-btn a {
   color: white;
 }
+input.chgpwd-btn {
+  background-color: black;
+  border-block-style: none;
+  border-left: 0px;
+  border-right: 0px;
+  color: white;
+}
+
 .centered-data a {
   color: black;
 }

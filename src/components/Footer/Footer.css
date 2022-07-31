@@ -128,7 +128,7 @@ ul {
   }
 
   .foot-menu.active {
-    background: #6668f4;
+    background: #cdcdcd;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -143,7 +143,7 @@ ul {
   }
 
   .foot-links:hover {
-    background-color: #7577fa;
+    background-color: #cdcdcd;
     border-radius: 0;
   }
 
