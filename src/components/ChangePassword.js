@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar } from './navbar'
 import { Link } from 'react-router-dom'
+import './ChangePassword.css'
 
 export const ChangePassword = () => {
   return (
@@ -26,10 +27,10 @@ export const ChangePassword = () => {
             </div>
           </div>
           <div classNameName='form-footer'>
-            <input classNameName='btn' type='submit' value='Update' />
+            <input classNameName='btn btn_primary' type='submit' value='Update' />
+            <Link to='/dashboard'>Back to dashboard</Link>
           </div>
         </form>
-        <Link to='/dashboard'>Back to dashboard</Link>
       </section>
     </>
   )

@@ -1,13 +1,14 @@
 import React from 'react'
 import { Navbar } from './navbar'
-
+import './register.css'
 import Footer from './Footer/Footer'
 
 export const Register = () => {
   return (
     <>
       <Navbar />
-      <section id='registration-page'>
+
+      <div id='registration-page' className='bodyWrapper'>
         <form className='signup-form' action='authenticate.php' method='post'>
           <h3>Create Account</h3>
           <div className='form-body'>
@@ -60,7 +61,7 @@ export const Register = () => {
             <input className='btn btn_primary' type='submit' value='Sign Up' />
           </div>
         </form>
-      </section>
+      </div>
       <Footer />
     </>
   )

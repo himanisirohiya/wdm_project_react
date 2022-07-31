@@ -1,12 +1,13 @@
 import React from 'react'
 import { Navbar } from './navbar'
 import Footer from './Footer/Footer'
+import './Contactus.css'
 
 export const Contactus = () => {
   return (
     <>
       <Navbar />
-      <section>
+      <div className='bodyWrapper'>
         <div className='contact-container'>
           <section className='info-details'>
             <h3>Reach out to us</h3>
@@ -37,12 +38,7 @@ export const Contactus = () => {
                   </div>
                   <div className='input-group'>
                     <label for='comment'>Message</label>
-                    <textarea
-                      id='commentid'
-                      name='comment'
-                      id='message'
-                      placeholder='Enter your message here'
-                    ></textarea>
+                    <textarea name='comment' id='message' placeholder='Enter your message here'></textarea>
                   </div>
                 </div>
               </div>
@@ -52,7 +48,7 @@ export const Contactus = () => {
             </form>
           </section>
         </div>
-      </section>
+      </div>
 
       <Footer />
     </>

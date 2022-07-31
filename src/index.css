@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  background: #eee;
+  color: #333;
+  width: 100%;
+  height: auto;
+}
+
+.bodyWrapper {
+  width: 100%;
+  min-height: 38rem;
+  position: relative;
+  background-color: #fff;
+}

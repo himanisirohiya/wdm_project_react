@@ -1,10 +1,9 @@
 #footer {
   background-color: black;
   color: bisque;
-  position: fixed;
-  height: 210px;
+  position: absolute;
+  height: auto;
   clear: both;
-  bottom: 0;
   width: 100%;
 }
 
@@ -17,11 +16,14 @@
   width: 81vw;
   justify-content: flex-start;
   margin-right: 2rem;
+  color: #fff;
 }
 
 .footer_content {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
   width: 100%;
-  position: relative;
 }
 
 .foot-links {
@@ -87,6 +89,26 @@ ul {
   padding: 0.5rem 0.5rem;
 }
 
+.footer-links-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 10%;
+}
+
+.fa-brands {
+  color: #fff;
+}
+.fa-brands:hover {
+  color: #fff;
+  box-shadow: 0 0.5rem 0.5rem rgb(186, 186, 188);
+  transform: all 0.2 ease-out;
+}
+
+.foot-menu > li > a {
+  color: #fff;
+  text-decoration: none;
+}
 @media screen and (max-width: 960px) {
   .footer {
     position: relative;
